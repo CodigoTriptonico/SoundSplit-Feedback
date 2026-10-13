@@ -1,0 +1,25 @@
+name: Enviar una sugerencia
+description: Propón una mejora para SoundSplit.
+title: "[Sugerencia]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Esta sugerencia será pública. No incluyas datos personales, nombres de procesos
+        o dispositivos, grabaciones de audio ni información privada.
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué te gustaría poder hacer?
+      description: Describe qué problema o necesidad tienes.
+      placeholder: Me ayudaría poder...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: ¿Cómo te gustaría que funcionara?
+      description: Cuéntanos tu idea; no hace falta tener los detalles resueltos.
+    validations:
+      required: false

@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ayuda para usar SoundSplit
+    url: https://github.com/CodigoTriptonico/Dual-sound/issues
+    about: Consulta los reportes existentes o abre un reporte de error o sugerencia.

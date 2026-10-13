@@ -1,0 +1,42 @@
+name: Reportar un error
+description: Cuéntanos qué no funciona en SoundSplit.
+title: "[Error]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Este reporte será público. No incluyas datos personales, nombres de procesos
+        o dispositivos, grabaciones de audio ni registros que puedan identificarlos.
+  - type: textarea
+    id: problem
+    attributes:
+      label: ¿Qué ocurrió?
+      description: Describe el problema con tus propias palabras.
+      placeholder: Al cambiar la salida de audio...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: ¿Cómo podemos reproducirlo?
+      description: Escribe los pasos para que podamos intentar reproducir el problema.
+      placeholder: |
+        1. Abrí SoundSplit...
+        2. Elegí...
+        3. Ocurrió...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: ¿Qué esperabas que pasara?
+    validations:
+      required: false
+  - type: input
+    id: app-version
+    attributes:
+      label: Versión de SoundSplit
+      placeholder: Por ejemplo, 1.0.1
+    validations:
+      required: false
